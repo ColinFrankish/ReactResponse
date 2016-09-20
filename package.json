@@ -1,7 +1,7 @@
 {
   "name": "teststack1",
   "version": "0.0.1",
-  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "description": "'npm install' and then 'npm run dev' and everything will work first time",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -22,6 +22,7 @@
   "dependencies": {
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
+    "react-responsive": "^1.1.4",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",

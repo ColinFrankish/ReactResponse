@@ -4,7 +4,7 @@ export default class Mobile extends React.Component{
   render(){
     return (
       <div className="mobile">
-        I am only visible in Mobile view less than 768px wide
+        <p style={{color: "red"}}>I'm set to be visible in small screens less than 768px wide</p>
       </div>
     )
   }
