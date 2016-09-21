@@ -11,7 +11,7 @@ import BigDevice from './widgets/bigdevice.jsx';
 import Portrait from './widgets/portrait.jsx';
 import Landscape from './widgets/landscape.jsx';
 import Desktop from './widgets/desktop.jsx';
-
+///////////////
 
 class ReactResponsive extends React.Component{
   render(){
