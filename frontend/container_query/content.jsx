@@ -25,7 +25,7 @@ const Demo = React.createClass({
 
   render() {
     const items = [0,1,2,3,4].map((n) => (
-      <li className={ classNames('demo__item', {'demo__item--feature': n === 0})} >
+      <li key={n} className={ classNames('demo__item', {'demo__item--feature': n === 0})} >
         <div className='demo__item-pic'></div>
         <div className='demo__item-content'></div>
       </li>
