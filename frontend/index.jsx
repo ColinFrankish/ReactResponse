@@ -62,10 +62,27 @@ class ContainerQuery extends React.Component{
   render(){
     return (
       <div>
-        <h1>Blatantly stolen and hacked from 'React Container Query' example from NPM</h1>
-        <p>Then re-written to change layouts according to the size of the viewport using CSS</p>
-        <p>This will probably not win any design awards. . . BUT ...</p>
-        <Query></Query>
+        <div>
+          <h1>Blatantly stolen and hacked from 'React Container Query' example from NPM</h1>
+          <p>Then re-written to change layouts according to the size of the viewport using CSS</p>
+          <p>This will probably not win any design awards. . . BUT ...</p>
+          <Query></Query>
+        </div>
+        <div>
+          <p>---------------------------------------------------------------------</p>
+        </div>
+      </div>
+    )
+  }
+}
+
+class AutoResponsiveReact extends React.Component{
+  render(){
+    return (
+      <div>
+        <h1>Fiddles with the'AutoResponsive React' library NPM</h1>
+        <p></p>
+        <p></p>
       </div>
     )
   }
@@ -73,3 +90,4 @@ class ContainerQuery extends React.Component{
 
 render(React.createElement(ReactResponsive), document.getElementById("react-responsive"));
 render(React.createElement(ContainerQuery), document.getElementById("container-query"));
+render(React.createElement(AutoResponsiveReact), document.getElementById("autoresponsive-react"));
