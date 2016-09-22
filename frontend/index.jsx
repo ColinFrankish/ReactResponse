@@ -14,6 +14,10 @@ import Desktop from './widgets/desktop.jsx';
 ///////////////
 import Query from'./container_query/content.jsx';
 //////////////
+import Responsive from './autoresponsive_react/components.jsx';
+import SimplestSampleComponent from './autoresponsive_react/components.jsx';
+
+
 class ReactResponsive extends React.Component{
   render(){
     return (
@@ -80,9 +84,15 @@ class AutoResponsiveReact extends React.Component{
   render(){
     return (
       <div>
-        <h1>Fiddles with the'AutoResponsive React' library NPM</h1>
-        <p></p>
-        <p></p>
+        <div>
+          <h1>Fiddles with the'AutoResponsive React' library NPM</h1>
+          <p></p>
+          <p></p>
+        </div>
+        <div>
+          
+          <SimplestSampleComponent />
+        </div>
       </div>
     )
   }
