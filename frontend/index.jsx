@@ -12,7 +12,8 @@ import Portrait from './widgets/portrait.jsx';
 import Landscape from './widgets/landscape.jsx';
 import Desktop from './widgets/desktop.jsx';
 ///////////////
-
+import Query from'./container_query/content.jsx';
+//////////////
 class ReactResponsive extends React.Component{
   render(){
     return (
@@ -57,15 +58,18 @@ class ReactResponsive extends React.Component{
     )
   }
 }
-class NewShit extends React.Component{
+class ContainerQuery extends React.Component{
   render(){
     return (
       <div>
-        SOME NEW SHIT
+        <h1>Blatantly stolen and hacked from 'React Container Query' example from NPM</h1>
+        <p>Then re-written to change layouts according to the size of the viewport using CSS</p>
+        <p>This will probably not win any design awards. . . BUT ...</p>
+        <Query></Query>
       </div>
     )
   }
 }
 
 render(React.createElement(ReactResponsive), document.getElementById("react-responsive"));
-render(React.createElement(NewShit), document.getElementById("newshit"));
+render(React.createElement(ContainerQuery), document.getElementById("container-query"));
