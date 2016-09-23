@@ -2,27 +2,6 @@ import React from 'react';
 import {render} from 'react-dom';
 import AutoResponsive from 'autoresponsive-react';
 
-// class Responsive extends React.Component {
-//   render() { 
-//     return (
-//       <div>
-//         <div className='container'>
-//           <p>tits</p>
-//         </div>
-//         <div>
-//           <div className="btn-group">
-            
-//           </div>
-//           <AutoResponsive ref="container" >
-            
-//           </AutoResponsive>
-//         </div>
-//       </div>
-//     )
-//   }
-// }
-
-// module.exports = Responsive;
 let style = {
   height: 100,
   width: 100,
@@ -45,9 +24,9 @@ let button_style ={
   margin: 10
 }
 
-const buttons = ['margin', 'append', 'remove', 'sort', 'horizontal', 'vertical'];
+const buttons = ['margin', 'append', 'remove', 'sort'];
 
-class SimplestSampleComponent extends React.Component {
+class Responsive extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -107,27 +86,7 @@ class SimplestSampleComponent extends React.Component {
     });
   }
 
-  horizontalClickHandle() {
-    this.setState({
-      horizontalDirection: this.state.horizontalDirection === 'left' ? 'right' : 'left'
-    });
-  }
 
-  verticalClickHandle() {
-
-    if (this.state.verticalDirection === 'top') {
-      this.setState({
-        verticalDirection: 'bottom',
-        containerHeight: React.findDOMNode(this.refs.container).clientHeight
-      });
-    } else {
-      this.setState({
-        verticalDirection: 'top',
-        containerHeight: null
-      });
-    }
-
-  }
 
   getAutoResponsiveProps() {
     return {
@@ -136,7 +95,6 @@ class SimplestSampleComponent extends React.Component {
       itemMargin: this.state.itemMargin,
       containerWidth: this.state.containerWidth || this.props.containerWidth,
       itemClassName: 'item',
-      containerHeight: this.state.containerHeight,
       transitionDuration: '.8',
       transitionTimingFunction: 'easeIn'
     };
@@ -167,4 +125,4 @@ class SimplestSampleComponent extends React.Component {
     );
   }
 }
-module.exports = SimplestSampleComponent;
+module.exports = Responsive;

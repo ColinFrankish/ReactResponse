@@ -15,7 +15,8 @@ import Desktop from './widgets/desktop.jsx';
 import Query from'./container_query/content.jsx';
 //////////////
 import Responsive from './autoresponsive_react/components.jsx';
-import SimplestSampleComponent from './autoresponsive_react/components.jsx';
+//////////////
+import Bootstrapped from './muicss/bootstrap_copy.jsx';
 
 
 class ReactResponsive extends React.Component{
@@ -89,15 +90,33 @@ class AutoResponsiveReact extends React.Component{
           <p></p>
           <p></p>
         </div>
-        <div>
-          
-          <SimplestSampleComponent />
+        <div>          
+          <Responsive />
         </div>
       </div>
     )
   }
 }
 
+class Bootstrapper extends React.Component{
+  render(){
+    return (
+      <div>
+        <div>
+          <h1>Attempt to make a 'bootstrap' grid with the MUICSS React library NPM</h1>
+          <p></p>
+          <p></p>
+        </div>
+        <div>          
+          <Bootstrapped/>
+        </div>
+      </div>
+    )
+  }
+}
+
+
 render(React.createElement(ReactResponsive), document.getElementById("react-responsive"));
 render(React.createElement(ContainerQuery), document.getElementById("container-query"));
-render(React.createElement(AutoResponsiveReact), document.getElementById("autoresponsive-react"));
+render(React.createElement(Responsive), document.getElementById("autoresponsive-react"));
+render(React.createElement(Bootstrapper), document.getElementById("bootstrap"));
