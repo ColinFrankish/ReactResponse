@@ -16,3 +16,11 @@ This Readme will explode in 30 seconds.
 
 ....
 
+__
+Oh yeah, i forgot. To run it from command line just 'npm install', then 'npm run dev' to 
+start the server locally. 
+__
+
+
+
+
