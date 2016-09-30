@@ -17,6 +17,8 @@ import Query from'./container_query/content.jsx';
 import Responsive from './autoresponsive_react/components.jsx';
 //////////////
 import Bootstrapped from './muicss/bootstrap_copy.jsx';
+/////////////
+import Grid from './react_bootstrap_grid/bootstrap_grid.jsx';
 
 
 class ReactResponsive extends React.Component{
@@ -104,7 +106,7 @@ class Bootstrapper extends React.Component{
       <div>
         <div>
           <h1>Attempt to make a 'bootstrap' grid with the MUICSS React library NPM</h1>
-          <p></p>
+          <h3>Material UI components really would be handy right . . . why it no work?</h3>
           <p></p>
         </div>
         <div>          
@@ -115,8 +117,27 @@ class Bootstrapper extends React.Component{
   }
 }
 
+class BootstrapGrid extends React.Component{
+  render(){
+    return (
+      <div>
+        <div>
+          <h1>Attempt to make a 'bootstrap' grid with the React Bootstrap Grid library NPM</h1>
+          <h3>LALALA</h3>
+          <p></p>
+        </div>
+        <div>          
+          <Grid/>
+        </div>
+      </div>
+    )
+  }
+}
+
+
 
 render(React.createElement(ReactResponsive), document.getElementById("react-responsive"));
 render(React.createElement(ContainerQuery), document.getElementById("container-query"));
-render(React.createElement(Responsive), document.getElementById("autoresponsive-react"));
+render(React.createElement(AutoResponsiveReact), document.getElementById("autoresponsive-react"));
 render(React.createElement(Bootstrapper), document.getElementById("bootstrap"));
+render(React.createElement(BootstrapGrid), document.getElementById("grid"));

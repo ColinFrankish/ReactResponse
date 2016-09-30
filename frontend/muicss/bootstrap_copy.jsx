@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
 import Muicss from 'muicss';
 import Container from 'muicss/lib/react/container';
 import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
 
-export default class Bootstrapped extends React.Component {
+class Bootstrapped extends React.Component {
   render() {
     return (
       <Container fluid={true}>
@@ -40,4 +40,4 @@ export default class Bootstrapped extends React.Component {
     );
   }
 }
-
+module.exports = Bootstrapped;
